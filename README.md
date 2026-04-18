@@ -1,102 +1,110 @@
-🛒 E-Commerce Data Engineering Pipeline & Analytics
-📌 Project Overview
-This project demonstrates an end-to-end Data Engineering pipeline built on a real-world e-commerce dataset. It covers data ingestion, cleaning, transformation, schema design, and SQL-based analytics to extract meaningful business insights.
-The goal of this project is to simulate a production-level data workflow and showcase skills required for Data Engineer roles (10+ LPA level).
-🚀 Key Highlights
-🔄 End-to-End Data Pipeline (Raw → Clean → Analytics)
-🧹 Data Cleaning & Preprocessing using Python (Pandas)
-🗄️ Relational Database Design (Normalized Schema)
-⚡ Advanced SQL Analytics Queries
-📊 Business Insights Generation
-🏗️ Architecture
-Raw CSV Data
-     ↓
+📌 1. Project Overview
+This project demonstrates an end-to-end Data Engineering pipeline using an e-commerce dataset. It includes data ingestion, cleaning, transformation, relational schema design, and SQL-based analytics to generate business insights.
+
+🎯 2. Objectives
+* Build a complete ETL pipeline
+* Design a normalized relational database
+* Perform business-focused SQL analysis
+* Simulate a real-world data engineering workflow
+
+🏗️ 3. Architecture
+
+Raw Data (CSV Files)
+        ↓
 Data Cleaning (Python - Pandas)
-     ↓
+        ↓
 Data Transformation
-     ↓
-SQL Database (MySQL)
-     ↓
-Analytical Queries (SQL)
-     ↓
+        ↓
+Relational Database (MySQL)
+        ↓
+SQL Analytics
+        ↓
 Business Insights
-📂 Project Structure
-📁 ecommerce-data-pipeline
+
+
+📂 4. Project Structure
+ecommerce-data-engineering-pipeline/
 │
-├── 📄 E-Commerce_Pipeline_Project.ipynb   # Data cleaning & preprocessing
-├── 📄 Schema.sql                         # Database schema design
-├── 📄 Analytical.sql                     # Business insights queries
-├── 📁 dataset/                           # Raw datasets (CSV files)
-└── 📄 README.md                          # Project documentation
-🛠️ Tech Stack
-👨‍💻 Programming & Tools
-Python (Pandas, NumPy)
-SQL (MySQL)
-📊 Data Engineering Concepts
-ETL Pipeline
-Data Cleaning
-Data Modeling
-Data Warehousing Basics
-🔄 Data Pipeline Steps
-1️⃣ Data Ingestion
-Loaded multiple CSV datasets:
-Orders
-Customers
-Products
-Sellers
-Payments
-Reviews
-Geolocation
-2️⃣ Data Cleaning
-Handled missing values
-Removed duplicates
-Checked data types
-Performed basic validations
-3️⃣ Data Transformation
-Derived new columns (e.g., delivery time)
-Merged datasets for analysis
-Standardized formats
-4️⃣ Data Modeling (SQL)
-Designed normalized relational schema:
-Customers
-Orders
-Order Items
-Products
-Sellers
-Payments
-🗄️ Database Schema
-Key tables:
-customers
-orders
-order_items
-products
-sellers
-payments
-Relationships:
-One-to-Many (Customer → Orders)
-One-to-Many (Order → Order Items)
-Many-to-One (Order Items → Products)
-📊 Key Analytical Queries
-💰 Revenue Analysis
-Total Revenue
-Average Order Value
-Highest & Lowest Order Value
-🛍️ Product Insights
-Top 10 Categories by Revenue
-Average Product Price per Category
-🚚 Delivery Performance
-Average Delivery Time by State
-Fastest & Slowest Regions
-💳 Payment Analysis
-Payment Method Distribution
-Revenue by Payment Type
-📈 Sample Insights
-📌 Identified top-performing product categories driving revenue
-📌 Analyzed customer distribution across states
-📌 Measured delivery efficiency across regions
-📌 Evaluated payment behavior trends
-🧠 What I Learned
-Building real-world ETL pipelines
-Designing scalable database schemas
-Writing optimized SQL queries
-Converting raw data into business insights
+├── 📁 data/
+│   ├── raw/                # Original CSV files (immutable)
+│   ├── processed/          # Cleaned data
+│  
+│
+├── 📁 notebooks/
+│   └── data_cleaning.ipynb # Your current notebook
+│
+├── 📁 sql/
+    ├── schema.sql          # Table creation scripts
+    └── analytics.sql       # Business queries
+
+🛠️ 5. Tech Stack
+Programming
+* Python (Pandas, NumPy)
+Database
+* MySQL
+Concepts Used
+* ETL Pipeline
+* Data Cleaning
+* Data Modeling
+* SQL Analytics
+
+🔄 6. Data Pipeline Workflow
+6.1 Data Ingestion
+* Imported multiple CSV datasets:
+    * Customers
+    * Orders
+    * Products
+    * Sellers
+    * Payments
+    * Reviews
+
+6.2 Data Cleaning
+* Handled missing values
+* Removed duplicates
+* Fixed inconsistent data types
+
+6.3 Data Transformation
+* Created derived columns (e.g., delivery time)
+* Joined datasets for better analysis
+* Standardized formats
+
+6.4 Data Modeling
+* Designed normalized tables:
+    * Customers
+    * Orders
+    * Order Items
+    * Products
+    * Sellers
+    * Payments
+
+🗄️ 7. Database Schema
+Key Relationships
+* Customer → Orders (1:N)
+* Orders → Order Items (1:N)
+* Order Items → Products (N:1)
+
+📊 8. Analytical Queries
+Revenue Analysis
+* Total revenue
+* Average order value
+Product Analysis
+* Top categories by revenue
+* Product price trends
+Delivery Analysis
+* Average delivery time
+* Regional performance
+Payment Analysis
+* Payment method distribution
+* Revenue by payment type
+
+📈 9. Key Insights
+* Identified top revenue-generating categories
+* Found customer distribution patterns
+* Measured delivery efficiency
+* Analyzed payment behavior trends
+
+🧠 10. Learnings
+* Built a real-world ETL pipeline
+* Learned data modeling best practices
+* Improved SQL query optimization skills
+* Converted raw data into business insights
