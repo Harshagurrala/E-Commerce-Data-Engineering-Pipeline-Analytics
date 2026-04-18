@@ -21,35 +21,21 @@ SQL Analytics
         ↓
 Business Insights
 
-ecommerce-data-engineering-pipeline/
+📂 4. Project Structure
+ecommerce-pipeline-project/
 │
-├── 📁 data/
-│   ├── raw/                # Original CSV files (immutable)
-│   ├── processed/          # Cleaned data
-│   └── curated/            # Final transformed datasets
+├── E-Commerce_Pipeline_Project.ipynb   # Data cleaning & transformation
+├── Schema.sql                         # Database schema creation
+├── Analytical.sql                     # SQL analysis queries
+├── dataset/                           # All CSV files
+│   ├── customers.csv
+│   ├── orders.csv
+│   ├── products.csv
+│   ├── sellers.csv
+│   ├── payments.csv
+│   └── reviews.csv
 │
-├── 📁 notebooks/
-│   └── data_cleaning.ipynb # Your current notebook
-│
-├── 📁 sql/
-│   ├── schema.sql          # Table creation scripts
-│   └── analytics.sql       # Business queries
-│
-├── 📁 src/
-│   ├── ingestion.py        # Load raw data
-│   ├── transformation.py   # Cleaning & transformation logic
-│   └── utils.py            # Helper functions
-│
-├── 📁 config/
-│   └── config.yaml         # DB configs, paths
-│
-├── 📁 docs/
-│   └── architecture.md     # Architecture explanation (optional but 🔥)
-│
-├── requirements.txt        # Python dependencies
-├── README.md              # Project documentation
-└── .gitignore
-
+└── README.md                          # Project documentation
 
 
 🛠️ 5. Tech Stack
