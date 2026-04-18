@@ -22,21 +22,6 @@ SQL Analytics
 Business Insights
 
 
-📂 4. Project Structure
-ecommerce-data-engineering-pipeline/
-│
-├── 📁 data/
-│   ├── raw/                # Original CSV files (immutable)
-│   ├── processed/          # Cleaned data
-│  
-│
-├── 📁 notebooks/
-│   └── data_cleaning.ipynb # Your current notebook
-│
-├── 📁 sql/
-    ├── schema.sql          # Table creation scripts
-    └── analytics.sql       # Business queries
-
 🛠️ 5. Tech Stack
 Programming
 * Python (Pandas, NumPy)
