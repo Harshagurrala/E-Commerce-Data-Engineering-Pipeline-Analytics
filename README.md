@@ -21,6 +21,36 @@ SQL Analytics
         ↓
 Business Insights
 
+ecommerce-data-engineering-pipeline/
+│
+├── 📁 data/
+│   ├── raw/                # Original CSV files (immutable)
+│   ├── processed/          # Cleaned data
+│   └── curated/            # Final transformed datasets
+│
+├── 📁 notebooks/
+│   └── data_cleaning.ipynb # Your current notebook
+│
+├── 📁 sql/
+│   ├── schema.sql          # Table creation scripts
+│   └── analytics.sql       # Business queries
+│
+├── 📁 src/
+│   ├── ingestion.py        # Load raw data
+│   ├── transformation.py   # Cleaning & transformation logic
+│   └── utils.py            # Helper functions
+│
+├── 📁 config/
+│   └── config.yaml         # DB configs, paths
+│
+├── 📁 docs/
+│   └── architecture.md     # Architecture explanation (optional but 🔥)
+│
+├── requirements.txt        # Python dependencies
+├── README.md              # Project documentation
+└── .gitignore
+
+
 
 🛠️ 5. Tech Stack
 Programming
