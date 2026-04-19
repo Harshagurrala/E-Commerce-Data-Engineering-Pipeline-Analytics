@@ -331,8 +331,8 @@ Pandas library
 
 **Harsha Gurrala**  
 📧 harshagurrala000@gmail.com
-💼 [LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/harsha-gurrala-8a7933315/))  
-🐙 [GitHub](https://github.com/yourusername)
+💼 [LinkedIn](https://www.linkedin.com/in/harsha-gurrala-8a7933315/)  
+🐙 [GitHub](https://github.com/Harshagurrala)
 
 ---
 
