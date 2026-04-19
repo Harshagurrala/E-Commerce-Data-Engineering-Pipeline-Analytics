@@ -259,15 +259,12 @@ ecommerce-analytics/
 │
 ├── E-commerce-Pipeline-Project.ipynb      # Google Colab notebook (data cleaning)
 │
-├── SQL-Query/                             # SQL scripts
-│   ├── 01_create_database.sql
-│   ├── 02_analytics_queries.sql
-│   └── 03_performance_indexing.sql
-│
-└── Screenshots/                           # Project visuals
-    ├── database_schema.png
-    ├── query_results.png
-    └── performance_metrics.png
+|── SQL-Query/                             # SQL scripts
+   ├── 01_create_database.sql
+   ├── 02_analytics_queries.sql
+   └── 03_performance_indexing.sql
+
+
 ```
 
 ---
